@@ -1,0 +1,91 @@
+<html>
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <style>
+        .contact-container {
+            display: flex;
+            align-items: center; /* Vertically center items */
+            justify-content: center; /* Space between image and text */
+            padding-left: 20px; /* Space between line and text */
+            max-width: 800px; /* Limit width of the container */
+            margin: auto; /* Center the container */
+        }
+        .contact-image {
+            flex: 0 0 auto; /* Prevent the image from shrinking */
+            display: flex;
+            justify-content: right;
+        }
+        .contact-info {
+            flex: 1; /* Allow the info to take the remaining space */
+            text-align: center; /* Left align text */
+            padding-left: 20px; /* Space between image and text */
+            color: #87CDEE; /* Set color to 87CDEE */
+        }
+        .contact-info a {
+            color: #87CDEE; /* Set link color to 87CDEE */
+            text-decoration: none; /* Remove underline from links */
+        }
+        .contact-info a:hover {
+            text-decoration: underline; /* Optional: underline on hover */
+        }
+        img {
+            border: none; /* Remove any border from images */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+            <div class="container-fluid">
+                <h2 style="padding-right: 5%;">Dealerships</h2>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" style="font-size: larger;" href="/about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Bordered Section -->
+        <div class="container mt-5" style="border: 1px solid black; border-radius: 10px; padding: 20px; max-width: 800px;">
+            <!-- Image Section -->
+            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <div class="card" style="width: 100%; margin-bottom: 20px; position: relative;">
+                    <img class="car-showroom" src="/static/cars.jpeg" alt="showroom_img">
+                </div>
+            </div>
+
+            <!-- Contact Information Section -->
+            <div class="contact-container">
+                <div class="contact-image">
+                    <img src="/static/contactus.png" alt="Contact Us Icon">
+                </div>
+                <div class="contact-info">
+                    <p><b>Contact Customer Service</b><br>
+                    <a href="mailto:support@bestcars.com">support@bestcars.com</a></p>
+                    <p><b>Contact our National Advertising team</b><br>
+                    <a href="mailto:NationalSales@bestcars.com">NationalSales@bestcars.com</a></p>
+                    <p><b>Contact our Public Relations team</b><br>
+                    <a href="mailto:PR@bestcars.com">PR@bestcars.com</a></p>
+                    <p><b>Contact the bestcars.com offices</b><br>
+                    <a href="tel:312-611-1111">312-611-1111</a></p>
+                    <p><b>Become a bestcars.com car dealer</b><br>
+                    <a href="https://growwithbestcars.com">Visit growwithbestcars.com</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
